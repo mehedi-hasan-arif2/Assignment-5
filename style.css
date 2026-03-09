@@ -178,3 +178,217 @@ body {
     cursor: pointer;
 }
 
+/* Tabs */
+.tab-section {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+}
+
+.tabs-wrapper {
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.tab-btn {
+    border: 1px solid #e2e8f0;
+    background: transparent;
+    padding: 8px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.tab-btn.active {
+    background: #581cff;
+    color: white;
+    border-color: #581cff;
+}
+
+.summary-bar {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.aperture-icon {
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.summary-markers {
+    display: flex;
+    gap: 20px;
+}
+
+.marker {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot-green { background: #22c55e; }
+.dot-purple { background: #a855f7; }
+
+/* Grid & Cards */
+.issue-grid {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    min-height: 200px;
+}
+
+.issue-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-open { border-top: 4px solid #22c55e; }
+.card-closed { border-top: 4px solid #a855f7; }
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.priority-badge {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.p-high { background: #fee2e2; color: #ef4444; }
+.p-medium { background: #fef3c7; color: #d97706; }
+.p-low { background: #f1f5f9; color: #64748b; }
+
+.label-row {
+    display: flex;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.lbl {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lbl-bug { background: #fee2e2; color: #ef4444; }
+.lbl-help { background: #ffedd5; color: #f97316; }
+.lbl-enhancement { background: #ecfdf5; color: #10b981; }
+
+/* Loading Animation */
+#loader-container {
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.loading-spinner {
+    width: 35px;
+    height: 35px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #581cff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+}
+
+.close-x {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+}
+
+/* Highlight Modal Tag */
+.modal-highlight {
+    background: #fffbeb; 
+    color: #b45309; 
+    padding: 6px 12px; 
+    border-radius: 8px; 
+    font-size: 11px; 
+    font-weight: 800; 
+    display: inline-block; 
+    margin-bottom: 15px;
+    border: 1px solid #fef3c7;
+}
+
+.btn-close-footer {
+    background: #581cff;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hidden { display: none !important; }
+
+
