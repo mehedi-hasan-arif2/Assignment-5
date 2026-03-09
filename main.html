@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Issues Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/github-logo.png" alt="Logo" class="nav-logo">
+                <span class="brand-text">GitHub Issues Tracker</span>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search issues...">
+                    <button class="btn-search" id="search-trigger">Search</button>
+                </div>
+                <button class="btn-new-issue">+ New Issue</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="tab-section">
+        <div class="tabs-wrapper">
+            <button class="tab-btn active" id="btn-all">All</button>
+            <button class="tab-btn" id="btn-open">Open</button>
+            <button class="tab-btn" id="btn-closed">Closed</button>
+        </div>
+    </div>
+
+    <div class="summary-bar">
+        <div class="summary-left">
+            <div class="aperture-icon">
+                <img src="assets/Aperture.png" alt="Aperture" width="24">
+            </div>
+            <div class="summary-txt">
+                <h3 id="issue-count-display">0 Issues</h3>
+                <p style="font-size:12px; color:#64748b">Track and manage your project issues</p>
+            </div>
+        </div>
+        <div class="summary-markers">
+            <span class="marker"><span class="dot dot-green"></span> Open</span>
+            <span class="marker"><span class="dot dot-purple"></span> Closed</span>
+        </div>
+    </div>
+
+    <section id="issue-grid" class="issue-grid">
+        <div id="loader-container" class="hidden">
+            <div class="loading-spinner"></div>
+        </div>
+    </section>
+
+    <div id="issue-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button id="close-x" class="close-x">&times;</button>
+            <div id="modal-data"></div>
+            <button id="close-footer-btn" class="btn-close-footer">Close</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

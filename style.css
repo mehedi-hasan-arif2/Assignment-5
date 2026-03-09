@@ -113,14 +113,68 @@ body {
     margin-bottom: 4px;
 }
 
-
-
-
-/* Responsive  Desin */
-/* Mobile */
-@media screen and (max-width: 576px) {
-    .login-card { 
-        margin: 20px; 
-        padding: 25px; 
-    }
+/* Header & Nav */
+.main-header {
+    background: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #eef2f6;
 }
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo { width: 32px; }
+
+.search-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+.search-box input {
+    border: none;
+    padding: 8px 15px;
+    background: transparent;
+    outline: none;
+    width: 200px;
+}
+
+.btn-search {
+    border: none;
+    background: white;
+    padding: 0 15px;
+    border-left: 1px solid #e2e8f0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-new-issue {
+    background: #581cff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
