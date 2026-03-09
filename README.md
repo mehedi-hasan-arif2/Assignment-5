@@ -1,15 +1,5 @@
 # GitHub Issues Tracker - Assignment 05
 
-This is a professional issue management dashboard built with Vanilla JavaScript. It allows users to track, filter, and search for various project issues using a clean and responsive UI.
-
-## 🛠 Features
-- Admin Authentication (admin/admin123)
-- Real-time data fetching from API
-- Filter issues by status (All, Open, Closed)
-- Search functionality with API integration
-- Interactive Modal for detailed view
-- Fully responsive design for all devices
-
 ## 📝 Conceptual Questions & Answers
 
 **1. What is the difference between var, let, and const?**
