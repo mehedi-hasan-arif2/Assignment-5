@@ -5,9 +5,9 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const usernameInput = document.getElementById('username').value;
     const passwordInput = document.getElementById('password').value;
 
-    /* Hardcoded credentials check as per PH instruction */
+    /* check */
     if (usernameInput === 'admin' && passwordInput === 'admin123') {
-        // Saving status to simulate login session
+        // Saving status 
         localStorage.setItem('isLoggedIn', 'true');
         window.location.href = 'main.html';
     } else {

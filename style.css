@@ -11,7 +11,7 @@ body {
     color: #1e293b;
 }
 
-/* Login Page Styling */
+/* Login Page Layout */
 .login-container {
     min-height: 100vh;
     display: flex;
@@ -46,6 +46,7 @@ body {
     margin-bottom: 30px;
 }
 
+/* Form Styles */
 .form-group {
     text-align: left;
     margin-bottom: 20px;
@@ -55,6 +56,7 @@ body {
     display: block;
     font-size: 14px;
     margin-bottom: 8px;
+    font-weight: 500;
 }
 
 .form-group input {
@@ -63,6 +65,12 @@ body {
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     outline: none;
+}
+
+.input-hint {
+    font-size: 11px;
+    color: #581cff;
+    margin-top: 5px;
 }
 
 .btn-primary {
@@ -75,27 +83,44 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
 .btn-primary:hover {
     background-color: #4314c7;
 }
 
+/* Demo Box & Divider Styles */
 .demo-box {
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 20px;
     background-color: #f1f5f9;
     border-radius: 8px;
     font-size: 13px;
 }
 
-/* Start of Responsive Breakpoints */
-/* Mobile */
-@media screen and (max-width: 576px) {
-    .login-card { margin: 20px; padding: 25px; }
+.divider-text {
+    color: #1e293b;
+    font-weight: 500;
 }
 
-/* Tablet */
-@media screen and (min-width: 576px) and (max-width: 992px) {
-    .login-card { max-width: 350px; }
+.demo-label {
+    margin: 10px 0;
+    color: #64748b;
+}
+
+.credential-item {
+    margin-bottom: 4px;
+}
+
+
+
+
+/* Responsive  Desin */
+/* Mobile */
+@media screen and (max-width: 576px) {
+    .login-card { 
+        margin: 20px; 
+        padding: 25px; 
+    }
 }
