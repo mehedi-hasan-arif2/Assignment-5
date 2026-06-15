@@ -1,4 +1,4 @@
-# GitHub Issues Tracker - Assignment 05
+# GitHub Issues Tracker 
 
 ## 📝 Conceptual Questions & Answers
 
